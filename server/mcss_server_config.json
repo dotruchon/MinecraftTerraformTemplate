@@ -1,0 +1,71 @@
+{
+  "guid": "20753a12-061d-4382-a1a4-4e0bbb9672b1",
+  "serverTypeGuid": "349bf6c7-2d19-4e42-bcee-592fa862bcee",
+  "name": "PepDod Server",
+  "description": "",
+  "creationDate": "2023-07-30T18:13:51.237899+02:00",
+  "autostart": false,
+  "forceSaveOnStop": true,
+  "stopPrevention": "None",
+  "startupMethode": "JavaStartupLine",
+  "allocatedMemory": 1024,
+  "allocatedMemorySuffix": "MB",
+  "startupLine": "java -Xms256M -Xmx[RAM]M -jar server.jar",
+  "startupBatFilename": null,
+  "serverFileChecksum": "3af73a9dc5a102e38147946360dd27d4d70bae7055bf91cf2151cd5d121b79e0",
+  "serverFileVersion": "1.20.1",
+  "javaPathOverride": "",
+  "tasks": {
+    "scheduledTasks": [
+      {
+        "guid": "633a938e-d1a4-4bd0-9796-0153d7e5baa2",
+        "name": "Backup",
+        "enabled": false,
+        "playerRequirement": "AtLeastOne",
+        "timing": {
+          "interval": 3600,
+          "repeat": true
+        },
+        "job": {
+          "backupIdentifier": "53a14617-0345-465c-95a9-ecba0ac12258"
+        }
+      }
+    ]
+  },
+  "backups": {
+    "backupTemplates": [
+      {
+        "identifier": "53a14617-0345-465c-95a9-ecba0ac12258",
+        "templateName": "PepDodServerBackup",
+        "destination": "D:\\Games\\Minecraft\\backups",
+        "compression": "High",
+        "protocol": "Disk",
+        "previousStatus": "Completed",
+        "deleteOldBackups": false,
+        "suspendServer": true,
+        "lastRun": "2023-07-31T19:54:17.8099021+02:00",
+        "fileBlacklist": [],
+        "folderBlacklist": []
+      }
+    ],
+    "backupHistory": [
+      {
+        "name": "PepDodServerBackup",
+        "destination": "D:\\Games\\Minecraft\\backups\\PepDodServerBackup_1690742155.zip",
+        "lastRun": "2023-07-30T20:36:00.5932089+02:00",
+        "status": "Completed",
+        "protocol": "Disk",
+        "logMessage": ""
+      },
+      {
+        "name": "PepDodServerBackup",
+        "destination": "D:\\Games\\Minecraft\\backups\\PepDodServerBackup_1690826057.zip",
+        "lastRun": "2023-07-31T19:54:29.2506246+02:00",
+        "status": "Completed",
+        "protocol": "Disk",
+        "logMessage": ""
+      }
+    ]
+  },
+  "subServers": []
+}
